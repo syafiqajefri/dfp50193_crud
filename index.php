@@ -8,13 +8,14 @@ require 'conn.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan Crud Syafiqa</title>
 </head>
 
 <body>
+    <center>
 <a href="tambah.php">Add New</a>
     <table border="1" cellpadding="8" cellspacing="0">
-        <tr bgcolor="#ffd700">
+        <tr bgcolor="#1A7D58">
             <th>Bil</th>
             <th>Nama</th>
             <th>No K/P</th>
@@ -33,14 +34,15 @@ require 'conn.php';
                     <td>
                         <a href="update.php?idsenarai=<?php echo $row->idsenarai; ?>">Edit</a>
                         |
-                        <a href="padam.php?idsenarai=<?php echo $row->idsenarai; ?>" onclick="return confirm('Betul ke nak padam?');">Padam</a>
+                        <a href="padam.php?idsenarai=<?php echo $row->idsenarai; ?>" onclick="return confirm('Anda pasti ingin padam?');">Padam</a>
                     </td>
                 </tr>
         <?php
             }
         }
         ?>
-    </table>
+    </table></center>
 </body>
+
 
 </html>
